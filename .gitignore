@@ -1,0 +1,8 @@
+# ignorirovanie faila 
+notes.md
+
+#ignoririovanie papok 
+vscode/
+
+#ignorirovanie vseh failov  s opredelennom rashirenii 
+logs/
