@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Roboto; /* set name */
+    src: url(./fonts/Roboto.ttf); /* url of the font */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    position: relative;
+}
+
+::placeholder {
+    font-family: Roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #cbe1e2;
+    z-index: 100;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+
+header nav a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #707885;
+    transition: all 0.2s;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #000;
+}
+
+header nav a.active {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 40px;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #cbe1e2;
+    color: #3d4755;
+}
+
+/* =================== */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card-avatar {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info .card-main-info {
+    flex-grow: 1;
+}
+
+.card-info .card-main-info p {
+    margin: 0 0 10px;
+}
+
+.card-info .name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+.social-links li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #0065d8;
+    color: #fff;
+    transition: all .3s;
+}
+.social-links li a:hover {
+    opacity: .8;
+}
+
+.social-links li a.instagram {
+    background: linear-gradient(to right, #833ab4,#fd1d1d,#fcb045);
+}
+
+.social-links li a.twitter {
+    background: #00a6d8;
+}
